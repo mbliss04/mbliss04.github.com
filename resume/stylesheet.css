@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+body {
+	font: "Tahoma, Arial, sans-serif";
+	font-size: 100%;
+}
+
+h1 {
+	font-size: 130%;
+	font-weight: bold;
+	text-align: center;
+}
+
+h2 {
+	font-size: 120%;
+	color: 1A1A1A;
+	text-align: center;
+}
+
+p {
+	margin: 10px;
+}
