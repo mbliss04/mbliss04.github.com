@@ -21,6 +21,10 @@ p {
 	margin:10px;
 }
 
+a, ul {
+	text-decoration: none;
+}
+
 .container {
 	margin:0 auto;
 	width:80%;
