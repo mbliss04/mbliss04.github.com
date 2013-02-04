@@ -1,0 +1,70 @@
+body {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:85%;
+}
+
+h1, h2 {
+	text-align:center;
+}
+
+h1 {
+	font-size:150%;
+	font-weight:bold;
+	margin:1%;
+}
+
+h3 {
+	font-size:120%;
+	margin:5%;
+	margin-left:0;
+	text-transform:uppercase;
+}
+
+h4 {
+	color:#FFFF00;
+}
+
+p, ul, li {
+	margin-bottom:3%;
+	line-height:135%;
+}
+
+p {
+	text-align:justify;
+}
+
+li {
+	margin-left:5%;
+}
+
+a, ul {
+	text-decoration: none;
+}
+
+nav {
+	text-align:center;
+	margin-top:5px;
+}
+
+nav a:hover {
+	opacity:.7;
+}
+
+#footer {
+	position:fixed;
+	text-align:center;
+	width:100%;
+	bottom:0;
+	height:30px;
+	padding-top:5px;
+	padding-bottom:5px;
+	opacity:.7;
+	/* For IE 5-7 */  
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);  
+    /* For IE 8 */  
+    -MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+}
+
+#footer img:hover {
+	opacity:.5;
+}

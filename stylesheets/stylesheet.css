@@ -25,8 +25,12 @@ h4 {
 }
 
 p, ul, li {
-	margin-bottom:1%;
+	margin-bottom:3%;
 	line-height:135%;
+}
+
+p {
+	text-align:justify;
 }
 
 li {
@@ -46,12 +50,22 @@ nav a:hover {
 	opacity:.7;
 }
 
+audio {
+	width:300px;
+	margin-left:40%;
+	padding-top:2.5%;
+}
+
 .container {
 	margin:0 auto;
 	margin-top:90px;
-	margin-bottom:30px;
 	width:80%;
 	height:100%;
+}
+
+.space {
+	display:block;
+	height:650px;
 }
 
 #logo {
@@ -73,12 +87,6 @@ nav a:hover {
 #header {
 	text-align:center;
 	width:100%;
-	height:82px;
-	overflow:hidden;  
-	position:relative;
-}
-
-#header img:hover {
 }
 
 .column {
@@ -93,22 +101,25 @@ nav a:hover {
 	height:600px;
 }
 
-#leftcol {
+#images {
 	float:left;
-	width:50%;
-	height:100%;
-	left:50%;
-}
-
-#rightcol {
-	float:left;
-	width:50%;
-	height:100%;
-	margin-left:50%;
+	display:block;
+	width:100%;
+	height:400px;
+	background-color:#FFF;
 }
 
 #leftimage, #rightimage {
 	position:relative;
+	left:25%;
+}
+
+#leftimage {
+	margin-right:250px;
+}
+
+#rightimage {
+	margin-left:250px;
 }
 
 #leftimage img, #rightimage img {
@@ -132,7 +143,14 @@ nav a:hover {
 }
 
 .about {
-	margin:2.5% 20% 2.5% 20%;
+	margin:1.5% 20% 2.5% 20%;
+}
+
+.about img {
+	float:left;
+	margin-right:1.5%;
+	border:1px solid #2d338a;
+	border-radius:10px;
 }
 
 #footer {
