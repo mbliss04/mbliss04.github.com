@@ -85,11 +85,6 @@ audio {
 	float:left;
 }
 
-.column a:hover {
-	display:block;
-	background-color:#FFF00;
-}
-
 .column img {
 	margin:20px 0 20px 0;
 	border:1px solid #2d338a;
