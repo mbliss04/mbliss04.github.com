@@ -108,7 +108,7 @@ audio {
 	left:0;
 }
 
-#leftimage img.top:active, #rightimage img.top:active {
+#leftimage img.top:hover, #rightimage img.top:hover {
 	opacity:.4;
 
 .about img {
