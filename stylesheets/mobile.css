@@ -84,10 +84,6 @@ audio {
 	border-radius:10px;
 }
 
-.column img:hover {
-	opacity:.9;
-}
-
 #images {
 	float:left;
 	display:block;
