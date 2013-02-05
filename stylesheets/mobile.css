@@ -41,8 +41,9 @@ nav {
 	text-align:center;
 	margin-top:15px;
 	display:block;
+	font-size:150%;
 	border:1px solid #2d338a;
-	border-radius:5px;	
+	border-radius:5px;
 }
 
 nav a:hover {
