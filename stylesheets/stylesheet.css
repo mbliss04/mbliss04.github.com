@@ -47,7 +47,6 @@ nav a:hover {
 }
 
 audio {
-	margin-top:10px;
 	width:100%;
 }
 
@@ -56,11 +55,6 @@ audio {
 	margin-top:90px;
 	width:80%;
 	height:100%;
-}
-
-.space {
-	display:block;
-	height:650px;
 }
 
 #logo {
@@ -138,13 +132,6 @@ audio {
 
 #leftimage img.top:hover, #rightimage img.top:hover {
 	opacity:.4;
-}
-
-.link {
-	float:left;
-	display:block;
-	width:50%;
-	text-align:center;
 }
 
 .about {
