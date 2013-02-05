@@ -75,31 +75,16 @@ audio {
 	width:100%;
 }
 
-.column {
-	width:39%;
-	float:left;
-}
-
-.column a:hover {
-	display:block;
-	background-color:#FFF00;
-}
-
 .column img {
 	margin:20px 0 20px 0;
+	max-width:100%;
+	height:auto;
 	border:1px solid #2d338a;
 	border-radius:10px;
 }
 
 .column img:hover {
 	opacity:.9;
-}
-
-#middle {
-	display:block;
-	float:left;
-	width:22%;
-	height:600px;
 }
 
 #images {
