@@ -78,12 +78,15 @@ audio {
 }
 
 #images {
-	max-width:100%;
-	height:auto;
 	float:left;
 	display:block;
 	width:100%;
 	height:400px;
+}
+
+#images img {
+	max-width:100%;
+	height:auto;
 }
 
 #leftimage, #rightimage {
