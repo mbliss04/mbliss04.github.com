@@ -69,6 +69,11 @@ audio {
 	width:100%;
 }
 
+#header img {
+	max-width:100%;
+	height:auto;
+}
+
 .column img {
 	margin:20px 0 20px 0;
 	max-width:100%;
