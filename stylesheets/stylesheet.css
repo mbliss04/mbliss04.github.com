@@ -59,7 +59,7 @@ audio {
 	height:100%;
 }
 
-#logo {
+#logo1 {
     position:fixed;
 	top:0;
 	left:50%;
@@ -71,8 +71,12 @@ audio {
 	overflow:hidden;  
 }
 
-#logo img:hover {
+#logo1 img:hover {
 	margin-top:-70px;
+}
+
+#logo2 {
+    display:none;
 }
 
 #header {
