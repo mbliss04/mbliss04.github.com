@@ -39,9 +39,7 @@ a, ul {
 
 nav {
 	text-align:center;
-	margin-top:10px;
-	font-size:130%;
-	display:block;
+	margin-top:5px;
 }
 
 nav a:hover {
@@ -96,10 +94,6 @@ audio {
 	margin:20px 0 20px 0;
 	border:1px solid #2d338a;
 	border-radius:10px;
-}
-
-.column img:hover {
-	opacity:.9;
 }
 
 #middle {

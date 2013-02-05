@@ -39,7 +39,9 @@ a, ul {
 
 nav {
 	text-align:center;
-	margin-top:5px;
+	margin-top:10px;
+	font-size:130%:
+	display:block;
 }
 
 nav a:hover {
