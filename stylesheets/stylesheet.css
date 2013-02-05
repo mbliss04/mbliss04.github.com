@@ -95,6 +95,7 @@ audio {
 .column {
 	width:39%;
 	float:left;
+	padding-bottom:40px;
 }
 
 .column img {
