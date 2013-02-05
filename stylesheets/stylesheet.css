@@ -116,7 +116,11 @@ audio {
 }
 
 #leftimage {
-	margin-left:-250px;
+	margin-left:-252px;
+}
+
+#rightimage {
+	margin-left:2px;
 }
 
 #leftimage img, #rightimage img {
