@@ -47,12 +47,14 @@ nav a:hover {
 }
 
 audio {
+	margin-top:10px;
 	width:100%;
 }
 
 .container {
 	margin:0 auto;
 	margin-top:90px;
+	margin-bottom:30px;
 	width:80%;
 	height:100%;
 }
