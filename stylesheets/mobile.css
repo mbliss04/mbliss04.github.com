@@ -112,10 +112,6 @@ audio {
 	transition: opacity .5s ease-in-out;
 }
 
-.about {
-	margin:1.5% 20% 2.5% 20%;
-}
-
 .about img {
 	float:left;
 	margin-right:1.5%;
