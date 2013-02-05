@@ -127,10 +127,6 @@ audio {
 	transition: opacity .5s ease-in-out;
 }
 
-#leftimage img.top:hover, #rightimage img.top:hover {
-	opacity:.4;
-}
-
 .about {
 	margin:1.5% 20% 2.5% 20%;
 }
@@ -138,6 +134,8 @@ audio {
 .about img {
 	float:left;
 	margin-right:1.5%;
+	max-width:100%;
+	height:auto;
 	border:1px solid #2d338a;
 	border-radius:10px;
 }
