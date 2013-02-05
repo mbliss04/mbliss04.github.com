@@ -20,10 +20,6 @@ h3 {
 	text-transform:uppercase;
 }
 
-h4 {
-	color:#FFFF00;
-}
-
 p, ul, li {
 	margin-bottom:3%;
 	line-height:135%;
@@ -51,9 +47,8 @@ nav a:hover {
 }
 
 audio {
-	width:300px;
-	margin-left:40%;
-	padding-top:2.5%;
+	margin-top:10px;
+	width:100%;
 }
 
 .container {
@@ -92,6 +87,21 @@ audio {
 .column {
 	width:39%;
 	float:left;
+}
+
+.column a:hover {
+	display:block;
+	background-color:#FFF00;
+}
+
+.column img {
+	margin:20px 0 20px 0;
+	border:1px solid #2d338a;
+	border-radius:10px;
+}
+
+.column img:hover {
+	opacity:.9;
 }
 
 #middle {
