@@ -68,6 +68,7 @@ audio {
 	opacity:.9;
 	text-align:center;
 	height:70px; 
+	overflow:hidden;
 }
 
 #header {
