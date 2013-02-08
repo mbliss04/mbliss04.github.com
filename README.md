@@ -1,5 +1,6 @@
 Author: McCall Bliss
-Created: February 22, 2013
+Created: January 22, 2013
+Modified: February 8, 2013
 
 Correctly Implemented:
 	1. Utlized GitHub to publish changes with meaningful commits
