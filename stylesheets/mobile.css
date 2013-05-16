@@ -57,7 +57,7 @@ nav {
 	text-align:center;
 	margin-top:15px;
 	display:block;
-	font-size:180%;
+	font-size:120%;
 }
 
 nav a:hover {
@@ -78,6 +78,10 @@ audio {
 
 #logo {
     display:none;
+}
+
+#mobilelogo {
+
 }
 
 #header {
@@ -151,4 +155,21 @@ audio {
 
 #footer img:hover {
 	opacity:.5;
+}
+
+.work {
+	display:block;
+	text-align:center;
+	width:200px;
+	float:left;
+	margin:1%;
+}
+
+.work:hover {
+	opacity: .8;
+}
+
+.work img {
+	border:1px solid #2d338a;
+	border-radius:10px;
 }
