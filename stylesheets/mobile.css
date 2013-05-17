@@ -29,6 +29,10 @@ h5 {
 	margin:3% 0 3% 0;
 }
 
+h6 {
+	display: none;
+}
+
 p, ul {
 	margin-bottom:3%;
 	line-height:135%;
