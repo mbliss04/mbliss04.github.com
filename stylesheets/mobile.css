@@ -83,6 +83,10 @@ audio {
 #mobilelogo {
 	text-align: center;
 	margin: 0 auto;
+	top:0;
+	left: 50%;
+	margin:30px 0 20px 0;
+	margin-left:-94.5px;
 }
 
 #header {
