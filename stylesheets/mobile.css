@@ -3,7 +3,7 @@ body {
 	font-size:85%;
 }
 
-h1, h2, h4 {
+h1, h2 {
 	text-align:center;
 }
 
@@ -21,7 +21,8 @@ h3 {
 }
 
 h4 {
-	display:none;
+	margin: 1%;
+	margin-bottom: 2%;
 }
 
 h5 {
