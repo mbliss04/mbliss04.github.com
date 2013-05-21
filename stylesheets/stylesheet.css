@@ -1,6 +1,7 @@
 body {
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size:85%;
+	background: url(../images/knitting250px.png) 100% 0 repeat fixed;
 }
 
 h1, h2, h6{
