@@ -240,30 +240,25 @@ function drawPolyline(map) {
               index = i;
           }
       }
-      shortest = (shortest * 0.000621371);  // convert to miles
       closestStation["name"] = stations[index][0];
       closestStation["distance"] = shortest.toPrecision(4);
   }
 
-  
-  function computeDistance(mylat, mylon, otherlat, otherlon) {
-      var R = 6371;   // Earth's radius
-      function toRad(degrees) {
-          return degrees * Math.PI / 180;
-      }
-      var lat1 = toRad(mylat); 
-      var lon1 = toRad(mylon);
-      var lat2 = toRad(otherlat);
-      var lon2 = toRad(otherlon);
-      var dLat = lat2 - lat1;
-      var dLon = lon2 - lon1;
-
+  function computeDistance(my_lat, my_long, other_lat, other_long) {
+      var R = 6371*.621371; // mi
+      var lat1 = my_lat;
+      var lon1 = my_long;
+      var lat2 = other_lat;
+      var lon2 = other_long;
+      var dLat = (lat2-lat1)*Math.PI/180;
+      var dLon = (lon2-lon1)*Math.PI/180;
+      lat1 = lat1*Math.PI/180;
+      lat2 = lat2*Math.PI/180;
       var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
-              Math.cos(lat1) * Math.cos(lat2) * 
-              Math.sin(dLon/2) * Math.sin(dLon/2);
-      var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+      Math.sin(dLon/2) * Math.sin(dLon/2) * Math.cos(lat1) * Math.cos(lat2); 
+      var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
       var d = R * c;
-      return d.toPrecision(4);
+      return d;
   }
 
 	
