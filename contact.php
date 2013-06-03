@@ -30,7 +30,7 @@
       $headers = "From:" . $email;
       mail("mccallkbliss@gmail.com",$subject,$message,$headers);
       echo "Mail Sent.";
-      header("Location: thankyou.html");
+      //header("Location: thankyou.html");
     }
   }
 ?>
