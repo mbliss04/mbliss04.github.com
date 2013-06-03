@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Home | McCall Bliss</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
+	<link rel="stylesheet" type="text/css" href="ostrich-sans-fontfacekit/stylesheet.css">
+	<link rel="stylesheet" href="stylesheets/mobile.css" media="only screen and (max-width: 481px), only screen and (max-device-width:481px)"/>
+	<link rel="stylesheet" href="stylesheets/style.css" media="only screen and (min-device-width:481px)"/>
+	<link rel="icon" href="images/delta.ico" type="image/png">
+	<link rel="stylesheet" href="stylesheets/formee-structure.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="stylesheets/formee-style.css" type="text/css" media="screen" />
+	<script>
+    function reveal(element) {
+    	$('#list li a').each(function() {
+    		if (!$(this).hasClass(element)) {
+    			$(this).animate({opacity:'.1'}, 200);
+    		}
+    		else {
+    			$(this).animate({opacity:'1'}, 200);
+    		}
+    	});
+	};
+	</script>
+</head>
+<body>
+	<div id="top">
+		<div id="logo"><a href="#top"><img src="images/dsprite.png" /></a></div>
+	</div>
+	<div id="container">
+		<ul id="regular_nav" class="bar">
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="documents/resume.pdf" target="_blank">Resume</a></li>
+			<li><a href="#social">Social</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+		<ul id="sticky_navigation" class="bar show">
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="documents/resume.pdf" target="_blank">Resume</a></li>
+			<li><a href="#social">Social</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+		<section id="header">
+			<h1>McCall Bliss</h1>
+			<ul class="tagline">
+				<li id="line1">Big fan of programming, web design, gift-wrapping.</li>
+				<li id="line2">Not so fond of physics, insects, watermelon.</li>
+			</ul>
+		</section>
+		<section id="portfolio">
+			<h2>Portfolio</h2><hr class="black">
+			<ul class="bar">
+				<li class="all"><a href="#portfolio" onclick="reveal('all')"><img src="images/infinity.png" />All</a></li>
+				<li class="programs"><a href="#portfolio" onclick="reveal('programs')"><img src="images/terminal.png" />Code</a></li>
+				<li class="game"><a href="#portfolio" onclick="reveal('game')"><img src="images/game.png" />Game</a></li>
+				<li class="web"><a href="#portfolio" onclick="reveal('web')"><img src="images/html.png" />Web</a></li>
+				<li class="brand"><a href="#portfolio" onclick="reveal('brand')"><img src="images/stamp1.png" />Print</a></li>
+			</ul>
+			<div id="workcontainer">
+				<ul id="list">
+					<li id="ufly" class="viewport">
+						<a class="all programs web" href="http://universifly.herokuapp.com">
+							<span class="pink-background">UniversiFly<em>Web Programming 2013</em></span>
+							<img src="images/ufly.png">
+						</a>
+					</li>
+					<li id="tfa" class="viewport">
+						<a class="all web" href="http://ase.tufts.edu/tfa">
+							<span class="pink-background">Tufts Filmmakers Association<em>Web Design 2012</em></span>
+							<img src="images/tfa.png">
+						</a>
+					</li>
+					<li id="frogger" class="viewport">
+						<a class="all programs game web" href="http://mbliss04.github.io/frogger/index.html">
+							<span class="pink-background">Frogger<em>Web Programming 2013</em></span>
+							<img src="images/frogger.png">
+						</a>
+					</li>
+					<li id="redline" class="viewport">
+						<a class="all programs web" href="http://mbliss04.github.io/redline/index.html">
+							<span class="pink-background">Red Line Tracker<em>Web Programming 2013</em></span>
+							<img src="images/redline.png">
+						</a>
+					</li>
+					<li id="boggle" class="viewport">
+						<a class="all programs" href="http://www.eecs.tufts.edu/~mbliss04/bog15/">
+							<span class="pink-background">Boggle Solver<em>Data Structures 2013</em></span>
+							<img src="images/bog.png">
+						</a>
+					</li>
+					<li id="scorecenter" class="viewport">
+						<a class="all programs web" href="http://high-scores.herokuapp.com">
+							<span class="pink-background">ScoreCenter<em>Web Programming 2013</em></span>
+							<img src="images/score.png">
+						</a>
+					</li>
+					<li id="tfaposter" class="viewport">
+						<a class="all brand" href="documents/poster.pdf">
+							<span class="pink-background">Event Poster<em>Tufts Filmmakers Association 2012</em></span>
+							<img src="images/poster.png">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section id="about">
+			<h2>This is me</h2><hr class="black">
+			<div id="containment">
+				<div id="description">
+					<h3>A bit about me</h3>
+					<p>McCall Katherine Bliss is a 20 year old creative studying <a href="http://www.cs.tufts.edu/">Computer Science</a> and <a href="http://ase.tufts.edu/cms/">Communications &amp; Media Studies</a> at <a href="www.tufts.edu">Tufts University</a> in Massachusetts.</p>
+					<div id="sprite"></div>
+					<p>The combination of the two fields creates a very <span class="create">interdisciplinary</span> academic experience with which she hopes to create a future filled with <span class="create">creation</span> and <span class="create">innovation.</span></p>
+				</div>
+				<div id="picture"><img src="images/mb.png"/></div>
+				<div id="skills">
+					<h3>And what I can do</h3>
+					<div class="fill">
+						<ul>
+							<li id="office">Microsoft Office</li>
+							<li id="adobe">Adobe Creative Suite</li>
+							<li id="languages">C++, Javascript, jQuery</li>
+							<li id="htmlcss">HTML &amp; CSS</li>
+							<li id="fcp">Final Cut Pro</li>
+							<li id="spanish">Spanish</li>
+						</ul>
+					</div>
+					<p><a href="company/index.html">See how I'd fit in at your company!(interactive)</a></p>
+				</div>
+			</div>
+		</section>
+		<section id="social">
+			<h2>Find me on the <span id="fillme">______</span></h2><hr class="black">
+			<div id="icons">
+				<a id="Dribbble" href="http://dribbble.com/mccallbliss"><img src="images/Dribbble.png" alt="Dribble"/></a>
+				<a id="Facebook" href="https://www.facebook.com/mccallkay"><img src="images/Facebook.png" alt="Facebook"/></a>
+				<a id="LinkedIn" href="http://www.linkedin.com/in/mccallbliss/"><img src="images/LinkedIn.png" alt="LinkedIn" /></a>
+				<a id="SoundCloud" href="https://soundcloud.com/mccall-bliss"><img src="images/SoundCloud.png" alt="SoundCloud" /></a>
+				<a id="Tumblr" href="http://subconsciousbliss.tumblr.com/"><img src="images/Tumblr.png" alt="Tumblr"/></a>
+				<a id="Twitter" href="https://twitter.com/missmccallbliss"><img src="images/Twitter.png" alt="Twitter"/></a>
+				<a id="YouTube" href="http://www.youtube.com/user/missmccallkay"><img src="images/YouTube.png" alt="YouTube"/></a>
+			</div>
+		</section>
+		<section id="contact">
+			<h2 class="white">Contact</h2><hr class="white" />
+			<form class="formee" method="post" action="contact.php">
+			<fieldset>
+				<div class="grid-6-12">
+						<label for="name">Name:</label>
+						<input type="text" id="name" name="name" value="First and last, please" onfocus="this.value=''; this.onfocus=null;" required>
+					</div>
+					<div class="grid-6-12">
+						<label for="email">Email:</label>
+						<input type="text" id="email" name="email" value="whatever@wherever.com" onfocus="this.value=''; this.onfocus=null;" required>	
+					</div>	
+					<div class="grid-12-12">
+						<label for="message">Message:</label>
+						<textarea id="message" name="message" onfocus="this.value=''; this.onfocus=null;" required>I love to get mail, no matter what content. Perhaps a haiku?</textarea>
+					</div>
+					<div class="grid-12-12">
+						<input type="submit" class="formee-button" name="formSubmit" value="voilà" />
+					</div>
+				</div>
+			</fieldset></form>
+		</section>
+		<section id="footer">
+			<div id="musictaste">
+				<
+			</div>
+			<p> Copyright &copy; McCall Bliss 2013</p>
+		</section>
+	</div>
+	<script type="text/javascript" src="js/libs/jquery.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/libs/formee.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.color.js"></script>
+</body>
+</html>
+
