@@ -22,6 +22,7 @@
     	});
 	};
 	</script>
+	<script src="js/libs/gen_validatorv4.js" type="text/javascript"></script>
 </head>
 <body>
 	<div id="top">
@@ -145,7 +146,7 @@
 		</section>
 		<section id="contact">
 			<h2 class="white">Contact</h2><hr class="white" />
-			<form class="formee" method="post" action="/sendmail.php">
+			<form class="formee" method="post" name="contactform" action="contact-form-handler.php">
 			<fieldset>
 				<div class="grid-6-12">
 						<label for="name">Name:</label>
@@ -171,6 +172,15 @@
 			<p> Copyright &copy; McCall Bliss 2013</p>
 		</section>
 	</div>
+	<script language="JavaScript">
+	// Code for validating the form
+	// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+	// for details
+	var frmvalidator  = new Validator("contactform");
+	frmvalidator.addValidation("name","req","Please provide your name"); 
+	frmvalidator.addValidation("email","req","Please provide your email"); 
+	frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+	</script>
 	<script type="text/javascript" src="js/libs/jquery.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="js/libs/formee.js"></script>
