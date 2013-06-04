@@ -360,3 +360,17 @@ label {
 #musictaste {
 
 }
+
+@media only screen and (max-device-width: 1144px) {
+	#containment {
+		height: 400px;
+	}
+
+	#description {
+		margin-left: 15%;
+	}
+
+	#skills {
+		margin-right: 15%;
+	}
+}

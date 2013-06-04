@@ -21,12 +21,6 @@ $(document).ready(function(){
 		console.log('width: ' + width + ' height: ' + height + ' curr at: ' + $(window).scrollTop());
 	});
 
-    /* --- Responsive data --- */
-
-
-
-
-
 	/* --- jQuery mouseover portfolio section --- */
 
 	$('.viewport').mouseenter(function(e) {
