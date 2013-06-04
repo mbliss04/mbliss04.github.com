@@ -19,11 +19,6 @@ $(document).ready(function(){
     	width = $(window).width();
 		height = $(window).height();
 		console.log('width: ' + width + ' height: ' + height + ' curr at: ' + $(window).scrollTop());
-
-        if (width <= 1088 && width > 925) {
-            alert('here');
-            $('#picture').css({width:'80%', height: '80%'});
-        }
 	});
 
     /* --- Responsive data --- */
