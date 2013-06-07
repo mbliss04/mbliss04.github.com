@@ -8,6 +8,9 @@
 *
 */
 
+@import url('formee-structure.css') all;
+@import url('formee-style.css') all;
+
 body {
 	font-family: 'OstrichSansMedium', Helvetica, sans-serif;
 	font-size: 120%;
@@ -355,8 +358,4 @@ label {
 	display: block;
 	width: 20%;
 	height: 300px;
-}
-
-#musictaste {
-
 }
