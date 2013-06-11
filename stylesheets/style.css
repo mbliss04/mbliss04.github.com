@@ -72,6 +72,10 @@ label {
 	height: 140px;
 }
 
+#mobilelogo {
+	display: none;
+}
+
 #logo {
 	position: fixed;
 	top: 0;
@@ -334,13 +338,6 @@ label {
 	color: #fff;
 }
 
-.rounded-corners {
-    -moz-border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -khtml-border-radius: 20px;
-    border-radius: 20px;
-}
-
 #contact {
 	background: url(../images/triangles.png) 100% 0 repeat fixed;
 }
@@ -348,14 +345,4 @@ label {
 #footer {
 	background: url(../images/gplaypattern.png) 100% 0 repeat fixed;
 	padding: 20px 0 20px 0;
-}
-
-#footer li {
-	float: left;
-	background-color: gray;
-	border-radius: 5px;
-	opacity: .6;
-	display: block;
-	width: 20%;
-	height: 300px;
 }

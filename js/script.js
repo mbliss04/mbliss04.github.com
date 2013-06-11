@@ -98,7 +98,7 @@ $(document).ready(function(){
         }
     });
 
-    /* --- Change opacity of logo if over picture --- */
+    /* --- Change opacity of logo if over picture ---
 
     var starttri = $('#picture').offset().top - 91;
     var endtri = starttri + 285;
@@ -111,6 +111,8 @@ $(document).ready(function(){
         	$('#logo').css({'opacity':'1'});
         }
     });
+
+    */
 
 	/* --- Scroll to page elements -- */
 

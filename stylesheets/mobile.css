@@ -8,16 +8,6 @@
 *
 */
 
-/** 
-*	McCall Bliss Portfolio
-*	May 2013
-* 	
-*	Author: McCall Bliss
-*			mbliss04.github.com
-*			@missmccallbliss
-*
-*/
-
 @import url('formee-structure.css') all;
 @import url('formee-style.css') all;
 
@@ -70,7 +60,7 @@ form {
 	padding: 10px;
 	display: inline-block;
 	margin: 0 auto;
-	width: 55%;
+	width: 80%;
 }
 
 label {
@@ -83,19 +73,7 @@ label {
 }
 
 #logo {
-	position: fixed;
-	top: 0;
-	left: 50%;
-	margin: 20px 0 20px 0;
-	margin-left: -50px;
-	text-align: center;
-	height:100px;
-	overflow: hidden;
-	z-index: 200;
-}
-
-#logo img:hover {
-	margin-top: -100px;
+	display: none;
 }
 
 #container {
@@ -131,7 +109,7 @@ label {
 
 .bar a {
 	display: inline-block;
-	padding: 0 20px 0 20px;
+	padding: 0 10px 0 10px;
 }
 
 .bar img {
@@ -151,8 +129,9 @@ label {
 
 #header h1 {
 	color: #f3f3f3;
-	font-size: 600%;
-	padding-top: 80px;
+	font-size: 450%;
+	padding-top: 90px;
+	padding-bottom: 25px;
 }
 
 .tagline {
@@ -254,17 +233,10 @@ label {
 }
 
 #containment {
-	height: 250px;
 	padding-top: 20px;
-}
-
-#description, #picture, #skills {
-	float: left;
-	width: 20%;
-}
-
-#description {
-	margin-left: 20%;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
 }
 
 #description p {
@@ -289,11 +261,7 @@ label {
 }
 
 #picture {
-	padding-top: 20px;
-}
-
-#skills {
-	margin-right: 20%;
+	padding: 20px 0 20px 0;
 }
 
 #skills ul {
@@ -344,13 +312,6 @@ label {
 	color: #fff;
 }
 
-.rounded-corners {
-    -moz-border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -khtml-border-radius: 20px;
-    border-radius: 20px;
-}
-
 #contact {
 	background: url(../images/triangles.png) 100% 0 repeat fixed;
 }
@@ -358,14 +319,4 @@ label {
 #footer {
 	background: url(../images/gplaypattern.png) 100% 0 repeat fixed;
 	padding: 20px 0 20px 0;
-}
-
-#footer li {
-	float: left;
-	background-color: gray;
-	border-radius: 5px;
-	opacity: .6;
-	display: block;
-	width: 20%;
-	height: 300px;
 }
