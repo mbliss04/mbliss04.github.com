@@ -100,11 +100,11 @@ label {
 .bar {
 	text-align: center;
 	margin-bottom: 30px;
+	font-size: 140%; 
 }
 
 .bar li {
 	width: 100%;
-	font-size: 140%; 
 	text-transform: uppercase;
 }
 
