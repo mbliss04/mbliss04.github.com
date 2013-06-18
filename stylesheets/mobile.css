@@ -103,17 +103,11 @@ label {
 }
 
 .bar li {
-	display: inline;
+	width: 100%;
 	text-transform: uppercase;
 }
 
-.bar a {
-	display: inline-block;
-	padding: 0 10px 0 10px;
-}
-
 .bar img {
-	display: inline-block;
 	margin-right: 5px;
 }
 
