@@ -104,6 +104,7 @@ label {
 
 .bar li {
 	width: 100%;
+	font-size: 140%; 
 	text-transform: uppercase;
 }
 
@@ -123,7 +124,7 @@ label {
 
 #header h1 {
 	color: #f3f3f3;
-	font-size: 450%;
+	font-size: 300%;
 	padding-top: 90px;
 	padding-bottom: 25px;
 }
