@@ -282,10 +282,6 @@ label {
 	background-color: #000;
 }
 
-#social {
-	background: url(../images/little_triangles.png) repeat fixed;
-}
-
 #icons {
 	padding: 10px 0 30px 0;
 }
@@ -311,7 +307,7 @@ label {
 }
 
 #contact {
-	background: url(../images/triangles.png) 100% 0 repeat fixed;
+	background-color: black;
 }
 
 #footer {
