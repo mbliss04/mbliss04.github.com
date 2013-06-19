@@ -106,6 +106,9 @@ label {
 .bar li {
 	width: 100%;
 	text-transform: uppercase;
+	background-color: #9dccb0;
+	margin: 2px;
+
 }
 
 .bar img {
