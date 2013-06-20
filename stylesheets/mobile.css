@@ -127,12 +127,13 @@ label {
 #header h1 {
 	color: #f3f3f3;
 	font-size: 350%;
-	padding-top: 90px;
+	padding-top: 60px;
 	padding-bottom: 25px;
 }
 
 .tagline {
 	font-size: 130%;
+	color: #cfebd9;
 }
 
 #portfolio {
