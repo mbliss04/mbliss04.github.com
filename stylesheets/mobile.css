@@ -154,7 +154,6 @@ label {
 
 #list {
 	margin: 0 auto;
-	width: 70%;
 	padding-bottom: 40px;
 }
 
@@ -215,13 +214,6 @@ label {
     .pink-background em {
         color: #ccc;
     }
-
-.return {
-	width: 100%;
-	padding: 50px 0 10px 0;
-	text-align: center;
-	width: 100%;
-}
 
 #about a:hover {
 	color: #ffa6a6;
