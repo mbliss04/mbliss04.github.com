@@ -85,6 +85,7 @@ $(document).ready(function(){
     var tag2 = tag1 + 24;
     $(window).scroll(function() {
         if (window.width() > 480) {
+            alert('oh hey');
             if (tag1 <= $(window).scrollTop()) {
             	$('#tagline, #line1').css({'color':'#cfebd9'});
             }
