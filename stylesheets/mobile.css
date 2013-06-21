@@ -157,6 +157,11 @@ label {
 	padding-bottom: 40px;
 }
 
+.pink-background em {
+    padding-left: 10px;
+    color: #d2434b;
+}
+
 #about a:hover {
 	color: #ffa6a6;
 }
