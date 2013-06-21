@@ -147,13 +147,15 @@ $(document).ready(function(){
 
 	var sticky_navigation_offset_top = $('#regular_nav').offset().top - 10;
     $(window).scroll(function() {
-		var scrollHeight = $(window).scrollTop();
-		console.log(sticky_navigation_offset_top);
-        if (scrollHeight < sticky_navigation_offset_top) {
-        	$('#sticky_navigation').addClass('show');
-        } else {
-        	$('#sticky_navigation').removeClass('show');
-        } 
+        if ($(window).width() > 480) {
+    		var scrollHeight = $(window).scrollTop();
+    		console.log(sticky_navigation_offset_top);
+            if (scrollHeight < sticky_navigation_offset_top) {
+            	$('#sticky_navigation').addClass('show');
+            } else {
+            	$('#sticky_navigation').removeClass('show');
+            } 
+        }
     });
 
 });
