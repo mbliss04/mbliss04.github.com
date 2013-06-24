@@ -312,6 +312,7 @@ img { max-width: 100%; }
 }
 
 @media all and (max-width: 580px) {
+	#header h1 { font-size: 400%; }
 	#containment { width: 80%; height: 100%; margin: 0 auto; text-align: center; }
 	#description, #skills, #picture { width: 100%; float: none; margin: 0 auto; }
 	#picture { padding: 20px 0 20px 0; }
