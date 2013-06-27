@@ -1,0 +1,55 @@
+ $(document).ready(function(){
+	canvas = $("#game");
+	ctx = canvas.getContext("2d");
+	sprite = new Image();
+	sprite.src = "assets/frogger_sprites.png";
+	dead_frog = new Image();
+	dead_frog.src = "assets/dead_frog.png";
+	
+	drawCanvas();
+
+	function drawCanvas()
+	{
+		ctx.fillStyle="#191970";
+		ctx.fillRect(0,0,399,282.5);
+		ctx.fillStyle="#000";
+		ctx.fillRect(0,282.5,399,282.5);
+		ctx.drawImage(sprite,0,117,399,38,0,280,399,38);  // road
+		ctx.drawImage(sprite,0,117,399,38,0,490,399,38);  // road
+		ctx.drawImage(sprite,0,8,399,110,0,8,399,110);    // title
+	}
+
+	function update()
+	(
+
+		makeText();
+	}
+
+	function score()
+	{
+		ctx.font="bold 20px Arial";
+		ctx.fillStyle="00FF00";
+		ctx.fillText("Level 1",50,545);
+		ctx.font="bold 14px Arial";
+		ctx.fillText("Score: 0",0,560);
+		ctx.fillText("Highscore: 0",80,560);
+	}
+
+	function lives()
+	{
+		ctx.scale(.7,.7);
+		ctx.drawImage(sprite,5,330,28,28,0,750,28,28);
+		ctx.drawImage(sprite,5,330,28,28,22,750,28,28);
+	}
+
+	game_loop = setInterval(update, 60);
+ });
+
+function obstacles()
+{
+	ctx.drawImage(sprite,9,367,28,21,370,540,28,21);  // frog
+	ctx.drawImage(sprite,43,261,32,30,0,330,32,30);	  // car
+	ctx.drawImage(sprite,78,262,32,30,370,380,32,30); // car
+	ctx.drawImage(sprite,3,227,92,26,0,120,92,26);	  // log
+
+}
