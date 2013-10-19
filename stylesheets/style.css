@@ -213,6 +213,7 @@ img { max-width: 100%; }
     text-decoration: none;
     width: 320px;
     z-index: 100;
+    left: -10px;
 }
     .viewport a span em {
         display: block;
