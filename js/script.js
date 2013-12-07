@@ -18,7 +18,7 @@ $(document).ready(function(){
     $(window).scroll(function() {
     	width = $(window).width();
 		height = $(window).height();
-		console.log('width: ' + width + ' height: ' + height + ' curr at: ' + $(window).scrollTop());
+		//console.log('width: ' + width + ' height: ' + height + ' curr at: ' + $(window).scrollTop());
 	});
 
 	/* --- jQuery mouseover portfolio section --- */
