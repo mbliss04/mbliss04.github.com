@@ -2,7 +2,7 @@
 <head>
 	<title>Home | McCall Bliss</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="item" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 	<!-- stylesheets -->
 	<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
 	<link rel="stylesheet" type="text/css" href="ostrich-sans-fontfacekit/stylesheet.css">
@@ -13,7 +13,7 @@
 	<!-- script -->
 	<script>
     function reveal(element) {
-    	$('#list li a').each(function() {
+    	$('#container .item a').each(function() {
     		if (!$(this).hasClass(element)) {
     			$(this).animate({opacity:'.1'}, 200);
     		}
@@ -29,7 +29,7 @@
 		<div id="logo"><a href="#top"><img src="images/dsprite.png" /></a></div>
 		<div id="mobilelogo"><a href="#top"><img src="images/delta.png" /></a></div>
 	</div>
-	<div id="container">
+	<div id="big-container">
 		<ul id="regular_nav" class="bar">
 			<li><a href="#portfolio">Portfolio</a></li>
 			<li><a href="#about">About</a></li>
@@ -60,81 +60,79 @@
 				<li class="web"><a href="#portfolio" onclick="reveal('web')"><img src="images/html.png" />Web</a></li>
 				<li class="brand"><a href="#portfolio" onclick="reveal('brand')"><img src="images/stamp1.png" />Brand</a></li>
 			</ul>
-			<div id="workcontainer">
-				<ul id="list">
-					<li id="strayweb" class="viewport">
-						<a class="all brand web" href="http://strayful.co.nz">
-							<span class="pink-background">Stray Website<em>Creative Technologies 2013</em></span>
-							<img src="images/stray.png">
-						</a>
-					</li>
-					<li id="strayblog" class="viewport">
-						<a class="all brand" href="http://bestrayful.wordpress.com">
-							<span class="pink-background">Stray Dev Blog<em>Creative Technologies 2013</em></span>
-							<img src="images/beachcurious.jpg">
-						</a>
-					</li>
-					<li id="survival" class="viewport">
-						<a class="all programs game" href="#">
-							<span class="pink-background">Survive! The Game<em>Serious Games 2013</em></span>
-							<img src="images/survive.jpg">
-						</a>
-					</li>
-					<li id="ufly" class="viewport">
-						<a class="all programs web" href="http://universifly.herokuapp.com">
-							<span class="pink-background">UniversiFly<em>Web Programming 2013</em></span>
-							<img src="images/ufly.png">
-						</a>
-					</li>
-					<li id="tfa" class="viewport">
-						<a class="all web" href="http://ase.tufts.edu/tfa">
-							<span class="pink-background">Tufts Filmmakers Association<em>Web Design 2012</em></span>
-							<img src="images/tfa.png">
-						</a>
-					</li>
-					<li id="tfaposter" class="viewport">
-						<a class="all brand" href="documents/poster.pdf">
-							<span class="pink-background">Event Poster<em>Tufts Filmmakers Association 2012</em></span>
-							<img src="images/poster.png">
-						</a>
-					</li>
-					<li id="frogger" class="viewport">
-						<a class="all programs game web" href="http://mbliss04.github.io/frogger/index.html">
-							<span class="pink-background">Frogger<em>Web Programming 2013</em></span>
-							<img src="images/frogger.png">
-						</a>
-					</li>
-					<li id="boggle" class="viewport">
-						<a class="all programs" href="http://www.eecs.tufts.edu/~mbliss04/bog15/">
-							<span class="pink-background">Boggle Solver<em>Data Structures 2013</em></span>
-							<img src="images/bog.png">
-						</a>
-					</li>
-					<li id="redline" class="viewport">
-						<a class="all programs web" href="http://mbliss04.github.io/redline/index.html">
-							<span class="pink-background">Red Line Tracker<em>Web Programming 2013</em></span>
-							<img src="images/redline.png">
-						</a>
-					</li>
-					<li id="otherside" class="viewport">
-						<a class="all brand" href="documents/otherside.pdf">
-							<span class="pink-background">Film Poster<em>Making Movies 2012</em></span>
-							<img src="images/otherside.jpg">
-						</a>
-					</li>
-					<li id="scorecenter" class="viewport">
-						<a class="all programs web" href="http://high-scores.herokuapp.com">
-							<span class="pink-background">ScoreCenter<em>Web Programming 2013</em></span>
-							<img src="images/score.png">
-						</a>
-					</li>
-					<li id="imaginary" class="viewport">
-						<a class="all brand" href="documents/impossible.pdf">
-							<span class="pink-background">Graphic Design<em>Freelance 2013</em></span>
-							<img src="images/imaginary.jpg">
-						</a>
-					</li>
-				</ul>
+			<div id="container">
+				<div id="strayweb" class="item">
+					<a class="all brand web" href="http://strayful.co.nz">
+						<span class="cover">Stray Website<em>Creative Technologies 2013</em></span>
+						<img src="images/stray.png">
+					</a>
+				</div>
+				<div id="strayblog" class="item">
+					<a class="all brand" href="http://bestrayful.wordpress.com">
+						<span class="cover">Stray Dev Blog<em>Creative Technologies 2013</em></span>
+						<img src="images/beachcurious.jpg">
+					</a>
+				</div>
+				<div id="survival" class="item">
+					<a class="all programs game" href="#">
+						<span class="cover">Survive! The Game<em>Serious Games 2013</em></span>
+						<img src="images/survive.jpg">
+					</a>
+				</div>
+				<div id="ufly" class="item">
+					<a class="all programs web" href="http://universifly.herokuapp.com">
+						<span class="cover">UniversiFly<em>Web Programming 2013</em></span>
+						<img src="images/ufly.png">
+					</a>
+				</div>
+				<div id="tfa" class="item">
+					<a class="all web" href="http://ase.tufts.edu/tfa">
+						<span class="cover">Tufts Film Association<em>Web Design 2012</em></span>
+						<img src="images/tfa.png">
+					</a>
+				</div>
+				<div id="tfaposter" class="item">
+					<a class="all brand" href="documents/poster.pdf">
+						<span class="cover">Event Poster<em>Tufts Filmmakers Association 2012</em></span>
+						<img src="images/poster.png">
+					</a>
+				</div>
+				<div id="frogger" class="item">
+					<a class="all programs game web" href="http://mbliss04.github.io/frogger/index.html">
+						<span class="cover">Frogger<em>Web Programming 2013</em></span>
+						<img src="images/frogger.png">
+					</a>
+				</div>
+				<div id="boggle" class="item">
+					<a class="all programs" href="http://www.eecs.tufts.edu/~mbliss04/bog15/">
+						<span class="cover">Boggle Solver<em>Data Structures 2013</em></span>
+						<img src="images/bog.png">
+					</a>
+				</div>
+				<div id="redline" class="item">
+					<a class="all programs web" href="http://mbliss04.github.io/redline/index.html">
+						<span class="cover">Red Line Tracker<em>Web Programming 2013</em></span>
+						<img src="images/redline.png">
+					</a>
+				</div>
+				<div id="otherside" class="item">
+					<a class="all brand" href="documents/otherside.pdf">
+						<span class="cover">Film Poster<em>Making Movies 2012</em></span>
+						<img src="images/otherside.jpg">
+					</a>
+				</div>
+				<div id="scorecenter" class="item">
+					<a class="all programs web" href="http://high-scores.herokuapp.com">
+						<span class="cover">ScoreCenter<em>Web Programming 2013</em></span>
+						<img src="images/score.png">
+					</a>
+				</div>
+				<div id="imaginary" class="item">
+					<a class="all brand" href="documents/impossible.pdf">
+						<span class="cover">Graphic Design<em>Freelance 2013</em></span>
+						<img src="images/imaginary.jpg">
+					</a>
+				</div>
 			</div>
 		</section>
 		<section id="about">
@@ -142,7 +140,7 @@
 			<div id="containment">
 				<div id="description">
 					<h3>A bit about me</h3>
-					<p>McCall Katherine Bliss is a 20 year old creative studying <a href="http://www.cs.tufts.edu/">Computer Science</a> and <a href="http://ase.tufts.edu/cms/">Communications &amp; Media Studies</a> at <a href="www.tufts.edu">Tufts University</a> in Massachusetts.</p>
+					<p>McCall Katherine Bliss is a 21 year old creative studying <a href="http://www.cs.tufts.edu/">Computer Science</a> and <a href="http://ase.tufts.edu/cms/">Communications &amp; Media Studies</a> at <a href="www.tufts.edu">Tufts University</a> in Massachusetts.</p>
 					<div id="sprite"></div>
 					<p>The combination of the two fields creates a very <span class="create">interdisciplinary</span> academic experience with which she hopes to create a future filled with <span class="create">creation</span> and <span class="create">innovation.</span></p>
 				</div>
@@ -208,6 +206,8 @@
 	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="js/libs/formee.js"></script>
 	<script type="text/javascript" src="js/libs/jquery.color.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/libs/imagesloaded.pkgd.min.js"></script>
 </body>
 </html>
 
