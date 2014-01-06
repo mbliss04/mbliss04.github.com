@@ -1,3 +1,7 @@
+body {
+	background: url(../images/gplaypattern.png) 100% 0 repeat fixed;
+}
+
 #logo {
 	position: fixed;
 	top: 0;
