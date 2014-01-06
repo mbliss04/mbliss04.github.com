@@ -94,7 +94,7 @@ img { max-width: 100%; }
 	margin-top: -100px;
 }
 
-#container {
+#big-container {
 	width: 100%;
 }
 
@@ -160,81 +160,42 @@ img { max-width: 100%; }
 	background: url(../images/gplaypattern.png) 100% 0 repeat fixed;
 }
 
-#workcontainer {
-	margin: 0 auto;
-	width: 100%;
-	text-align: center;
-}
-
-#workcontainer img {
-	border: 10px solid #f3f3f3;
-	border-radius: 5px;
-}
-
-#list {
-	margin: 0 auto;
+#container {
 	width: 70%;
+	margin: 0 auto;
 	padding-bottom: 40px;
-	display: inline-block;
 }
 
-.viewport {
-    border: 3px solid #eee;
-    float: left;
-    width: 300px;
-    height: 200px;
-    overflow: hidden;
-    margin: 0 9px 9px 0;
-    position: relative;
-}
-
-/* This is so that the 2nd thumbnail in each row fits snugly. You will want to add a similar
-   class to the last thumbnail in each row to get rid of the margin-right. */
-.no-margin {
-    margin-right: 0;
-}
-
-/* --- Link configuration that contains the image and label ----------------------------- */
-.viewport a {
-    display: block;
-    position: relative;
-}
-
-.viewport a img {
-    height: 220px;
-    left: -20px;
-    position: relative;
-    top: -20px;
-    width: 320px;
+.item { 
+	width: 32%;
+	margin-bottom: 15px;
 }
 
 /* --- Label configuration -------------------------------------------------------------- */
-.viewport a span {
+.item a span {
     display: none;
     font-size: 2.0em;
     font-weight: bold;
-    height: 220px;
-    padding-top: 50px;
+    height: 120px;
     position: absolute;
-    left: -10px;
     text-align: center;
     text-decoration: none;
-    width: 320px;
+    width: 300px;
     z-index: 100;
 }
-    .viewport a span em {
+    .item a span em {
         display: block;
         font-size: 0.45em;
         font-weight: normal;
     }
 
 /* --- Dark hover background ------------------------------------------------------------ */
-.pink-background {
+.cover {
     background-color: rgba(15, 15, 15, 0.6);
     color: #fff;
     text-shadow: #000 0px 0px 20px;
 }
-    .pink-background em {
+    .cover em {
         color: #ccc;
     }
 
@@ -360,3 +321,16 @@ img { max-width: 100%; }
 	background: url(../images/gplaypattern.png) 100% 0 repeat fixed;
 	padding: 20px 0 20px 0;
 }
+
+@media all and (min-width: 480px) and (max-width: 715px) {
+	.item {
+		width: 48%;
+	}
+}
+
+@media all and (max-width: 480px) {
+	.item {
+		width: 100%;
+	}
+}
+

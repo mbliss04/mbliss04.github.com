@@ -2,6 +2,38 @@ $(document).ready(function(){
 
 	var skill = [{'name':'office', 'percent':'82%'}, {'name':'adobe', 'percent':'78%'}, {'name':'languages', 'percent':'85%'}, {'name':'htmlcss', 'percent':'90%'}, {'name':'fcp', 'percent':'79%'}, {'name':'spanish', 'percent':'75%'}];
 
+    /* --- jQuery Masonry --- */
+
+    // initialize Masonry
+    var $container = $('#container').masonry();
+
+    // layout Masonry again after all images have loaded
+    $container.imagesLoaded( function() {
+      $container.masonry({
+        "itemSelector": '.item',
+        "gutter": 10
+      });
+    });
+
+    /* --- Portfolio hover effects --- */
+
+    $('#container .item a').mouseover( function() {
+        itemHeight = ($('.item').height());
+        itemWidth = $('.item').width();
+        topPad = (.2 * itemHeight);
+        itemHeight = (itemHeight - (topPad + 5));
+        $(this).children('span').css({
+            display:'block', 
+            width: itemWidth,
+            height: itemHeight,
+            paddingTop: topPad
+        });
+    }).mouseleave(function(){
+        $(this).children('span').css({
+            display:'none'
+        });
+    });
+
 	/* --- Set percentages of each skill set ---*/
 	function setPercents() {
 		for (i = 0; i < skill.length; i++) {
@@ -20,16 +52,6 @@ $(document).ready(function(){
 		height = $(window).height();
 		//console.log('width: ' + width + ' height: ' + height + ' curr at: ' + $(window).scrollTop());
 	});
-
-	/* --- jQuery mouseover portfolio section --- */
-
-	$('.viewport').mouseenter(function(e) {
-        $(this).children('a').children('img').animate({ height: '220', left: '0', top: '-10', width: '330'}, 100);
-        $(this).children('a').children('span').fadeIn(200);
-    }).mouseleave(function(e) {
-        $(this).children('a').children('img').animate({ height: '200', left: '0', top: '0', width: '300'}, 100);
-        $(this).children('a').children('span').fadeOut(200);
-    });
 
     /* --- jQuery mouseover on social icons --- */
 
@@ -100,22 +122,6 @@ $(document).ready(function(){
         }
     });
 
-    /* --- Change opacity of logo if over picture ---
-
-    var starttri = $('#picture').offset().top - 91;
-    var endtri = starttri + 285;
-    $(window).scroll(function() {
-        if ($(window).scrollTop() >= starttri && 
-        	$(window).scrollTop() <= endtri) {
-        	$('#logo').css({'opacity':'.5'});
-        }
-        else {
-        	$('#logo').css({'opacity':'1'});
-        }
-    });
-
-    */
-
 	/* --- Scroll to page elements -- */
 
 	$("a[href='#top']").click(function() {
@@ -149,7 +155,7 @@ $(document).ready(function(){
     $(window).scroll(function() {
         if ($(window).width() > 480) {
     		var scrollHeight = $(window).scrollTop();
-    		console.log(sticky_navigation_offset_top);
+    		//console.log(sticky_navigation_offset_top);
             if (scrollHeight < sticky_navigation_offset_top) {
             	$('#sticky_navigation').addClass('show');
             } else {
