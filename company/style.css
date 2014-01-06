@@ -1,0 +1,78 @@
+#logo {
+	position: fixed;
+	top: 0;
+	left: 50%;
+	margin: 20px 0 20px 0;
+	margin-left: -50px;
+	text-align: center;
+	height:100px;
+	overflow: hidden;
+	z-index: 200;
+}
+
+#logo img:hover {
+	margin-top: -100px;
+}
+
+#construction {
+	padding-top: 200px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+h1 {
+	font-size: 300%;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 20px;
+}
+
+h2 {
+	font-size: 120%;
+}
+
+h3 {
+	color: #d2434b;
+	font-size: 150%;
+	margin: 10px;
+}
+
+@media all and (min-width: 480px) {
+	#mobilelogo {
+		display: none;
+	}
+}
+
+@media all and (max-width: 480px) {
+	#logo {
+		display: none;
+	}
+}
+
+button {
+	background-color: #000;
+}
+
+#question {
+
+}
+
+#no, #yes {
+	width: 10%;
+	display: block;
+	padding: 5px;
+	text-align: center;
+	margin: 35%;
+}
+
+#no {
+	margin-right: 5%;
+}
+
+#yes {
+	margin-left: 5%;
+}
+
+#heart {
+	background: url();
+}
