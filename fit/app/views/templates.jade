@@ -1,0 +1,13 @@
+script(type='text/template', id='questionTemplate').
+    <div class="question-content trans">
+    <h1><%= qnum %>. <%= question %></h1>
+    <form id="question-<%= qnum %>" class="question-list clearfix">
+    <% for (i in options) { %>
+    <div class="q"><input type="radio" id="<%= qnum %>-<%= i %>" name="<%= qnum %>" value="<%= options[i] %>"><label for="<%= qnum %>-<%= i %>"><%= options[i] %></label></div>
+    <% } %>
+    </form>
+    <% if (qnum > 1) { %>
+    <button class="js-back ghostbutton">Back</button>
+    <% } %>
+    <button class="js-next ghostbutton">Next</button>
+    </div>

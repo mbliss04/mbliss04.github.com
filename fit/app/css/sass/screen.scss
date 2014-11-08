@@ -1,0 +1,38 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "mixins";
+@import "questions";
+@import "landing";
+
+body {
+    font-family: 'Helvetica Neue', helvetica, sans-serif;
+    font-weight: 200;
+    background: url("../../images/shapes.jpeg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+h4 {
+    font-size: 0.8em;
+}
+
+h5 {
+    font-size: 0.7em;
+}

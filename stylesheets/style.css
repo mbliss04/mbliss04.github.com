@@ -145,6 +145,12 @@ img { max-width: 100%; }
 	background-color: #000;
 }
 
+@media all and (min-width: 1600px) {
+	#header {
+		background: url(../images/mplsbig.jpg) 0 190px no-repeat fixed;
+	}
+}
+
 #header h1 {
 	color: #f3f3f3;
 	font-size: 600%;
@@ -258,6 +264,7 @@ img { max-width: 100%; }
 	margin: 2%;
 	background-color: #d2434b;
 	border-radius: 2px;
+	cursor: default;
 }
 
 @media all and (min-width: 875px) and (max-width: 1157px) {

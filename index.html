@@ -3,32 +3,35 @@
 	<title>Home | McCall Bliss</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="item" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="author" content="McCall Bliss"/>
+	<meta name="description" content="Website and Portfolio for McCall Katherine Bliss. Tufts University Computer Science 2015"/>
+	<meta name="keywords" content="mccall, bliss, missmccallkay, computer, science, tufts, university, website, creative, technology, portfolio"/>
 	<!-- stylesheets -->
 	<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
 	<link rel="stylesheet" type="text/css" href="ostrich-sans-fontfacekit/stylesheet.css">
 	<link rel="stylesheet" href="stylesheets/mobile.css" media="all and (max-width: 480px) and (max-device-width:480px)"/>
 	<link rel="stylesheet" href="stylesheets/style.css" media="all and (min-device-width:480px)"/>
 	<!-- favicon -->
-	<link rel="icon" href="images/delta.ico" type="image/png">
+	<link rel="shortcut icon" href="images/delta.ico">
 	<!-- script -->
 	<script>
-    function reveal(element) {
-    	$('#container .item a').each(function() {
-    		if (!$(this).hasClass(element)) {
-    			$(this).animate({opacity:'.1'}, 200);
-    		}
-    		else {
-    			$(this).animate({opacity:'1'}, 200);
-    		}
-    	});
+	    function reveal(element) {
+	    	$('#container .item a').each(function() {
+	    		if (!$(this).hasClass(element)) {
+	    			$(this).animate({opacity:'.1'}, 200);
+	    		}
+	    		else {
+	    			$(this).animate({opacity:'1'}, 200);
+	    		}
+	    	});
 	};
 	</script>
 </head>
 <body>
 	<div id="top">
-		<div id="logo"><a href="#top"><img src="images/dsprite.png" /></a></div>
-		<div id="mobilelogo"><a href="#top"><img src="images/delta.png" /></a></div>
+		<div id="logo"><a href="#top"><img src="images/dsprite.png" alt="mccall bliss logo"/></a></div>
+		<div id="mobilelogo"><a href="#top"><img src="images/delta.png" alt="mccall bliss logo"/></a></div>
 	</div>
 	<div id="big-container">
 		<ul id="regular_nav" class="bar">
@@ -55,77 +58,101 @@
 		<section id="portfolio">
 			<h2>Portfolio</h2><hr class="black">
 			<ul class="bar">
-				<li class="all"><a href="#portfolio" onclick="reveal('all')"><img src="images/infinity.png" />All</a></li>
-				<li class="programs"><a href="#portfolio" onclick="reveal('programs')"><img src="images/terminal.png" />Code</a></li>
-				<li class="game"><a href="#portfolio" onclick="reveal('game')"><img src="images/game.png" />Game</a></li>
-				<li class="web"><a href="#portfolio" onclick="reveal('web')"><img src="images/html.png" />Web</a></li>
-				<li class="brand"><a href="#portfolio" onclick="reveal('brand')"><img src="images/stamp1.png" />Brand</a></li>
+				<li class="all"><a href="#portfolio" onclick="reveal('all')"><img src="images/infinity.png" alt="mccall bliss all" />All</a></li>
+				<li class="programs"><a href="#portfolio" onclick="reveal('programs')"><img src="images/terminal.png" alt="mccall bliss code" />Code</a></li>
+				<li class="game"><a href="#portfolio" onclick="reveal('game')"><img src="images/game.png" alt="mccall bliss game" />Game</a></li>
+				<li class="web"><a href="#portfolio" onclick="reveal('web')"><img src="images/html.png" alt="mccall bliss web"/>Web</a></li>
+				<li class="brand"><a href="#portfolio" onclick="reveal('brand')"><img src="images/stamp1.png" alt="mccall bliss brand" />Brand</a></li>
 			</ul>
 			<div id="container">
+				<div id="naviweb" class="item">
+					<a class="all brand web programs" href="http://discovernavi.com" target="_blank">
+						<span class="cover">Navi Website<em>lohtuslabs 2014</em></span>
+						<img src="images/navi.png" alt="mccall bliss navi lohtuslabs">
+					</a>
+				</div>
+				<div id="llweb" class="item">
+					<a class="all brand web programs" href="http://lohtuslabs.com" target="_blank">
+						<span class="cover">lohtuslabs Website<em>lohtuslabs 2014</em></span>
+						<img src="images/lohtuslabsweb.png" alt="mccall bliss lohtuslabs web">
+					</a>
+				</div>
+				<div id="llblog" class="item">
+					<a class="all brand" href="http://lohtuslabs.tumblr.com" target="_blank">
+						<span class="cover">lohtuslabs Blog<em>lohtuslabs 2014</em></span>
+						<img src="images/lohtuslabs.png" alt="mccall bliss lohtuslabs blog">
+					</a>
+				</div>
+				<div id="llpoints" class="item">
+					<a class="all brand web programs" href="http://lohtuslabspoints.herokuapp.com/" target="_blank">
+						<span class="cover">lohtuslabs Point Tracker<em>lohtuslabs 2014</em></span>
+						<img src="images/llpoints.png" alt="mccall bliss lohtuslabs">
+					</a>
+				</div>
 				<div id="strayweb" class="item">
-					<a class="all brand web" href="http://strayful.co.nz">
+					<a class="all brand web programs" href="/strayful/index.html" target="_blank">
 						<span class="cover">Stray Website<em>Creative Technologies 2013</em></span>
-						<img src="images/stray.png">
+						<img src="images/stray.png" alt="mccall bliss strayful">
 					</a>
 				</div>
 				<div id="strayblog" class="item">
-					<a class="all brand" href="http://bestrayful.wordpress.com">
+					<a class="all brand" href="http://bestrayful.wordpress.com" target="_blank">
 						<span class="cover">Stray Dev Blog<em>Creative Technologies 2013</em></span>
-						<img src="images/beachcurious.jpg">
+						<img src="images/beachcurious.jpg" alt="mccall bliss stray blog">
 					</a>
 				</div>
 				<div id="survival" class="item">
-					<a class="all programs game" href="https://dl.dropboxusercontent.com/u/33794462/surviveweb.html">
+					<a class="all programs game programs" href="https://dl.dropboxusercontent.com/u/33794462/surviveweb.html" target="_blank">
 						<span class="cover">Survive! The Game<em>Serious Games 2013</em></span>
-						<img src="images/survive.jpg">
+						<img src="images/survive.jpg" alt="mccall bliss survive">
 					</a>
 				</div>
 				<div id="ufly" class="item">
-					<a class="all programs web" href="http://universifly.herokuapp.com">
+					<a class="all programs web programs" href="http://universifly.herokuapp.com" target="_blank">
 						<span class="cover">UniversiFly<em>Web Programming 2013</em></span>
-						<img src="images/ufly.png">
+						<img src="images/ufly.png" alt="mccall bliss universifly">
 					</a>
 				</div>
 				<div id="tfa" class="item">
-					<a class="all web" href="http://ase.tufts.edu/tfa">
+					<a class="all web programs" href="http://ase.tufts.edu/tfa" target="_blank">
 						<span class="cover">Tufts Film Association<em>Web Design 2012</em></span>
-						<img src="images/tfa.png">
+						<img src="images/tfa.png" alt="mccall bliss tufts film association">
 					</a>
 				</div>
 				<div id="graphics" class="item">
-					<a class="all brand" href="http://mccallblissdesigns.tumblr.com/">
+					<a class="all brand" href="http://mccallblissdesigns.tumblr.com/" target="_blank">
 						<span class="cover">Graphic Design<em>Past and Present Work</em></span>
-						<img src="images/poster.png">
+						<img src="images/poster.png" alt="mccall bliss graphic design">
 					</a>
 				</div>
 				<div id="frogger" class="item">
-					<a class="all programs game web" href="http://mbliss04.github.io/frogger/index.html">
+					<a class="all programs game web" href="/frogger/index.html" target="_blank">
 						<span class="cover">Frogger<em>Web Programming 2013</em></span>
-						<img src="images/frogger.png">
+						<img src="images/frogger.png" alt="mccall bliss frogger">
 					</a>
 				</div>
 				<div id="boggle" class="item">
-					<a class="all programs" href="http://www.eecs.tufts.edu/~mbliss04/bog15/">
+					<a class="all programs" href="http://www.eecs.tufts.edu/~mbliss04/bog15/" target="_blank">
 						<span class="cover">Boggle Solver<em>Data Structures 2013</em></span>
-						<img src="images/bog.png">
+						<img src="images/bog.png" alt="mccall bliss boggle">
 					</a>
 				</div>
 				<div id="redline" class="item">
-					<a class="all programs web" href="http://mbliss04.github.io/redline/index.html">
+					<a class="all programs web" href="/redline/index.html" target="_blank">
 						<span class="cover">Red Line Tracker<em>Web Programming 2013</em></span>
-						<img src="images/redline.png">
+						<img src="images/redline.png" alt="mccall bliss redline">
 					</a>
 				</div>
 				<div id="scorecenter" class="item">
-					<a class="all programs web" href="http://high-scores.herokuapp.com">
+					<a class="all programs web" href="http://high-scores.herokuapp.com" target="_blank">
 						<span class="cover">ScoreCenter<em>Web Programming 2013</em></span>
-						<img src="images/score.png">
+						<img src="images/score.png" alt="mccall bliss scorecenter">
 					</a>
 				</div>
 				<div id="artwork" class="item">
-					<a class="all brand" href="http://mccallbliss.tumblr.com/">
+					<a class="all brand" href="http://mccallbliss.tumblr.com/" target="_blank">
 						<span class="cover">Art<em>Past and Present Work</em></span>
-						<img src="images/direction.png">
+						<img src="images/direction.png" alt="mccall bliss art">
 					</a>
 				</div>
 			</div>
@@ -135,30 +162,31 @@
 			<div id="containment">
 				<div id="description">
 					<h3>A bit about me</h3>
-					<p>McCall Katherine Bliss is a 21 year old creative studying <a href="http://www.cs.tufts.edu/">Computer Science</a> and <a href="http://ase.tufts.edu/cms/">Communications &amp; Media Studies</a> at <a href="www.tufts.edu">Tufts University</a> in Massachusetts.</p>
+					<p>McCall Katherine Bliss is a 21 year old creative studying <a href="http://www.cs.tufts.edu/">Computer Science</a> and <a href="http://ase.tufts.edu/cms/mma.html">Multimedia Arts</a> at <a href="www.tufts.edu">Tufts University</a> in Massachusetts.</p>
 					<div id="sprite"></div>
 					<p>The combination of the two fields creates a very <span class="create">interdisciplinary</span> academic experience with which she hopes to create a future filled with <span class="create">creation</span> and <span class="create">innovation.</span></p>
 				</div>
-				<div id="picture"><img src="images/mb.png"/></div>
+				<div id="picture"><img src="images/mb.png" alt="mccall bliss"/></div>
 				<div id="skills">
 					<h3>And what I can do</h3>
 					<div class="fill">
 						<ul>
 							<li id="office">Microsoft Office</li>
 							<li id="adobe">Adobe Creative Suite</li>
-							<li id="languages">C++, Javascript, jQuery</li>
-							<li id="htmlcss">HTML &amp; CSS</li>
+							<li id="languages">C++ &amp; C, JavaScript</li>
+							<li id="backend">Node.js, PHP</li>
+							<li id="htmlcss">HTML5 &amp; CSS</li>
 							<li id="fcp">Final Cut Pro</li>
 							<li id="spanish">Spanish</li>
 						</ul>
 					</div>
-					<p><a href="company/index.html">See how I'd fit in at your company!(interactive)</a></p>
+					<p><a href="/fit">See how I'd fit in at your company!(interactive)</a></p>
 				</div>
 			</div>
 		</section>
 		<section id="contact">
 			<h2 class="white">Contact</h2><hr class="white" />
-			<form class="formee" method="get" name="contactform" action="mailto:mccallkbliss@gmail.com">
+			<form class="formee" method="post" name="contactform" action="contact.php">
 			<fieldset>
 				<div class="grid-6-12">
 						<label for="name">Name:</label>
@@ -170,10 +198,10 @@
 					</div>	
 					<div class="grid-12-12">
 						<label for="message">Message:</label>
-						<textarea id="message" name="message" onfocus="this.value=''; this.onfocus=null;" required>I love to get mail, no matter what content. Perhaps a haiku?</textarea>
+						<textarea id="message" name="message" onfocus="this.value=''; this.onfocus=null;" required>I love to get mail, no matter what the content. Perhaps a haiku?</textarea>
 					</div>
 					<div class="grid-12-12">
-						<input type="submit" class="formee-button" name="formSubmit" value="voilà" />
+						<input type="submit" class="formee-button" name="submit" value="voilà" />
 					</div>
 				</div>
 			</fieldset></form>
@@ -184,7 +212,7 @@
 				<a id="Dribbble" href="http://dribbble.com/mccallbliss"><img src="images/Dribbble.png" alt="Dribble"/></a>
 				<a id="Facebook" href="https://www.facebook.com/mccallkay"><img src="images/Facebook.png" alt="Facebook"/></a>
 				<a id="LinkedIn" href="http://www.linkedin.com/in/mccallbliss/"><img src="images/LinkedIn.png" alt="LinkedIn" /></a>
-				<a id="SoundCloud" href="https://soundcloud.com/mccall-bliss"><img src="images/SoundCloud.png" alt="SoundCloud" /></a>
+				<a id="SoundCloud" href="https://soundcloud.com/mccall-bliss"><img src="images/SoundCloud.png" alt="SoundCloud"/></a>
 				<a id="Tumblr" href="http://subconsciousbliss.tumblr.com/"><img src="images/Tumblr.png" alt="Tumblr"/></a>
 				<a id="Twitter" href="https://twitter.com/missmccallbliss"><img src="images/Twitter.png" alt="Twitter"/></a>
 				<a id="YouTube" href="http://www.youtube.com/user/missmccallkay"><img src="images/YouTube.png" alt="YouTube"/></a>

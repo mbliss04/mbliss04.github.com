@@ -1,0 +1,72 @@
+[   
+    {
+        "question" : "When designing, who is your first priority?", 
+        "options": 
+            [ "The Customer", "The Business Team", "The Boss", "The Budget"], 
+        "weight" :
+            [3, 2, 1, 0]
+    }, 
+    {
+        "question" : "How important is social media in your marketing?", 
+        "options" : 
+            ["Not at all", "Somewhat", "Very"],
+        "weight" :
+            [0, 1, 3]
+    }, 
+    {
+        "question" : "Can anyone give input to conceptualizing projects?", 
+        "options" : 
+            ["Yes", "Sometimes", "No"], 
+        "weight" :
+            [2, 1, 0]
+    },
+    {
+        "question" : "Do you often experiment with the latest technology?", 
+        "options" :
+            ["Yes", "No", "Sometimes"],
+        "weight" :
+            [2, 0, 1]
+    },
+    {
+        "question" : "Which word does your company most identify with", 
+        "options" : 
+            ["Innovation", "Reliability", "Quality", "Affordability"], 
+        "weight" :                                                                                                                                                                                                                                                                                                                            
+            [3, 2, 2, 1]
+    },
+    {
+        "question" : "If your company found out the world was ending, how would you spread the news?", 
+        "options" : 
+            ["Social Media", "Sky Banner", "Television", "Radio"],
+        "weight" :
+            [3, 3, 2, 2]
+    },
+    {
+        "question" : "Which word best describes your design principles", 
+        "options" :
+            ["Minimalist", "User-friendly", "Trendy", "Unique"],
+        "weight" :
+            [2, 3, 2, 2]
+    },
+    {
+        "question" : "If a new but better idea was proposed halfway through the project, which idea would you follow through with?",
+        "options" : 
+            ["Old Concept", "New Concept"],
+        "weight" :
+            [0, 1]
+    },
+    {
+        "question" : "Which skill do you value most from an employee?",
+        "options" :
+            ["Creativity", "The Ability to Learn", "Teamwork", "Expertise"],
+        "weight" :
+            [3, 3, 3, 1]
+    },
+    {
+        "question" : "Would you consider your company a family?",
+        "options" :
+            ["Yes", "No"],
+        "weight" :
+            [1, 0]
+    }
+ ]

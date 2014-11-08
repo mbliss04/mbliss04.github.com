@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	var skill = [{'name':'office', 'percent':'82%'}, {'name':'adobe', 'percent':'78%'}, {'name':'languages', 'percent':'85%'}, {'name':'htmlcss', 'percent':'90%'}, {'name':'fcp', 'percent':'79%'}, {'name':'spanish', 'percent':'75%'}];
+	var skill = [{'name':'office', 'percent':'82%'}, {'name':'adobe', 'percent':'78%'}, {'name':'languages', 'percent':'85%'}, {'name':'backend', 'percent':'75%'}, {'name':'htmlcss', 'percent':'90%'}, {'name':'fcp', 'percent':'79%'}, {'name':'spanish', 'percent':'75%'}];
 
     /* --- jQuery Masonry --- */
 

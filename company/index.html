@@ -6,21 +6,54 @@
 	<link rel="stylesheet" type="text/css" href="../stylesheets/reset.css">
 	<link rel="stylesheet" type="text/css" href="../ostrich-sans-fontfacekit/stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="../stylesheets/style.css" media="all and (min-device-width:480px)"/>
 	<!-- favicon -->
-	<link rel="icon" href="images/delta.ico" type="image/png">
+	<link rel="icon" href="../images/delta.ico" type="image/png">
 </head>
 <body>
 	<div id="top">
-		<div id="logo"><a href="../index.html"><img src="../images/dsprite.png" /></a></div>
-		<div id="mobilelogo"><a href="#top"><img src="../images/delta.png" /></a></div>
+		<div id="logo"><a href="index.html"><img src="../images/dsprite.png" /></a></div>
+		<div id="mobilelogo"><a href="index.html"><img src="../images/delta.png" /></a></div>
 	</div>
-	<div id="construction">
-		<h1>Aw shucks!</h1> 
-		<h2>This page is still under construction. Got to make it nice and pretty for the folks!</h2>
-		<h3>Check back next time you get an inkling.</h3>
-	</div>
+	<section id="questions">
+		<form class="formee" id="questionnairre" method="post" action="saveresults.php" name="results">
+			<fieldset>
+				<h2>1. When designing, who is your first priority?</h2>
+				<div>
+					<input type="radio" name="q1" id="q1a" value="a"/>
+					<label for="q1a">a. The client</label>
+				</div>
+				<div>
+					<input type="radio" name="q1" class="q1b" value="b"/>
+					<label for="q1b">b. The user</label>
+				</div>
+				<div>
+					<input type="radio" name="q1" class="q1c" value="c"/>
+					<label for="q1c">c. The boss</label>
+				</div>
+				<div>
+					<input type="radio" name="q1" class="q1d" value="d"/>
+					<label for="q1d">d. The budget</label>
+				</div>
+			</fieldset>
+			<input type="button" class="formee-button next-button" id="1" name="next" value="next">
+		</form>
+	</section>
+	<section id="results" class="hidden">
+		<div id="result"></div>
+	</section>
 	<!-- Scripts -->
 	<script type="text/javascript" src="../js/libs/jquery.js"></script>
 	<script type="text/javascript" src="company.js"></script>
+	<script>
+		$(function() {
+		     $('form').bind('submit',function() { showValues(); return false; });
+		});
+		function showValues() {
+		     var str = $("form").serialize();
+		     $("#results").fadeIn();
+		     $("#result").text(str);
+		}
+	</script>
 </body>
 </html>

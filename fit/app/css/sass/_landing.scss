@@ -1,0 +1,53 @@
+@import "mixins";
+
+#title {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3em;
+    position: absolute;
+    top: -50px;
+    opacity: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    @include transition(all 400ms ease-in-out);
+    &.visible {
+        top: 23%;
+        opacity: 1;
+    }
+}
+
+#welcome {
+    width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 25%;
+    h2 {
+        line-height: 1.5em;
+        &[contenteditable="true"] {
+            margin: 0 auto;
+            margin-top: 10px;
+            width: 220px;
+            background-color: rgba(255,255,255,0.9);
+            padding: 10px;
+            border-radius: 15px;
+            line-height: 1em;
+            position: relative;
+            text-indent: 0px;
+            vertical-align: center;
+            outline: none;
+            overflow: hidden;
+            display: inline-block;
+            -webkit-user-select: none;
+            user-select: none;
+            vertical-align: top;
+        }
+    }
+}
+
+#startQuiz {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 4%;
+}

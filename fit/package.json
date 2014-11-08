@@ -1,0 +1,14 @@
+{
+  "name": "companyfit",
+  "version": "0.0.1",
+  "author": "mccallbliss <mccall@mccallbliss.com>",
+  "description": "Is McCall Bliss a fit at your company?",
+  "repository": {
+      "type": "git",
+      "url": "git://github.com/mbliss04/mbliss04.github.com.git"
+  },
+  "dependencies": {
+    "express": "^4.7.2",
+    "jade": "^1.5.0"
+  }
+}

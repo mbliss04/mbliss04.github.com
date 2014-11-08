@@ -1,0 +1,48 @@
+.ghostbutton {
+    padding: 20px;
+    font-family: 'Quicksand', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    margin: 0 auto;
+    @include transition(background-color 0.3s ease-in-out);
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.4);
+        cursor: pointer;
+    }
+}
+
+.trans {
+    background-color: rgba(255,255,255,0.4);
+    display: block;
+    padding: 30px;
+}
+
+.clearfix:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.wrapper {
+    margin: 0 auto;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */

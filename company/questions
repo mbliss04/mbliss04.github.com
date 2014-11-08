@@ -1,0 +1,56 @@
+{ "number" : "1.", "question" : "When designing, who is your first priority?", "options": { "a" : "The client", "b" : "The user", "c": "The boss", "d" : "The budget" }
+{
+	2. How important is social media in branding?
+	Not at all
+	Somewhat
+	Very	
+} 
+{
+	3. Can anyone give input to conceptualizing projects
+	Yes
+	Sometimes
+	No
+}
+{
+	4. Do you often utilize the latest technology
+	Yes
+	No
+}
+{
+	5. Which word does your company most identify with?
+	Innovation
+	Reliability
+	Quality
+	Affordable
+}
+{
+	6. If you found out the world was ending, how would you spread the news?
+	Facebook
+	Sky banner
+	TV
+	Twitter
+}
+{
+	7. Which word best describes your design principles?
+	Minimalist
+	User-friendly
+	Trendy
+	Unique
+}
+{
+	8. If a new but better idea was proposed halfway through the project, which idea would you present?
+	Old concept
+	New concept
+}
+{
+	9. Which skill do you value most from an employee?
+	Creativity
+	Teamwork
+	Expertise
+	Communication
+}
+{
+	10. Would you consider your company a family?
+	Yes
+	No
+}

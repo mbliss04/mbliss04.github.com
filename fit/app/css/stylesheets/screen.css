@@ -1,0 +1,336 @@
+/* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/_mixins.scss */
+.ghostbutton {
+  padding: 20px;
+  font-family: 'Quicksand', Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 1em;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #fff;
+  margin: 0 auto;
+  -moz-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+/* line 12, ../sass/_mixins.scss */
+.ghostbutton:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+/* line 18, ../sass/_mixins.scss */
+.trans {
+  background-color: rgba(255, 255, 255, 0.4);
+  display: block;
+  padding: 30px;
+}
+
+/* line 24, ../sass/_mixins.scss */
+.clearfix:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+/* line 32, ../sass/_mixins.scss */
+.wrapper {
+  margin: 0 auto;
+}
+
+/* line 36, ../sass/_mixins.scss */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* line 44, ../sass/_mixins.scss */
+.clearfix {
+  display: inline-block;
+}
+
+/* start commented backslash hack \*/
+/* line 46, ../sass/_mixins.scss */
+* html .clearfix {
+  height: 1%;
+}
+
+/* line 47, ../sass/_mixins.scss */
+.clearfix {
+  display: block;
+}
+
+/* close commented backslash hack */
+/* line 8, ../sass/_questions.scss */
+#questions .question-content {
+  margin: 100px;
+  display: block;
+  border-radius: 5px;
+  min-width: 200px;
+  max-width: 500px;
+}
+/* line 14, ../sass/_questions.scss */
+#questions .question-content h1 {
+  line-height: 1.3em;
+}
+/* line 17, ../sass/_questions.scss */
+#questions .question-content .question-list {
+  margin: 20px;
+  text-align: left;
+}
+/* line 20, ../sass/_questions.scss */
+#questions .question-content .question-list .q {
+  margin: 10px;
+}
+/* line 22, ../sass/_questions.scss */
+#questions .question-content .question-list .q label {
+  margin-left: 10px;
+}
+/* line 27, ../sass/_questions.scss */
+#questions .question-content button {
+  width: 100px;
+  margin: 10px;
+}
+
+/* line 1, ../sass/_mixins.scss */
+.ghostbutton {
+  padding: 20px;
+  font-family: 'Quicksand', Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 1em;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #fff;
+  margin: 0 auto;
+  -moz-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+/* line 12, ../sass/_mixins.scss */
+.ghostbutton:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+/* line 18, ../sass/_mixins.scss */
+.trans {
+  background-color: rgba(255, 255, 255, 0.4);
+  display: block;
+  padding: 30px;
+}
+
+/* line 24, ../sass/_mixins.scss */
+.clearfix:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+/* line 32, ../sass/_mixins.scss */
+.wrapper {
+  margin: 0 auto;
+}
+
+/* line 36, ../sass/_mixins.scss */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* line 44, ../sass/_mixins.scss */
+.clearfix {
+  display: inline-block;
+}
+
+/* start commented backslash hack \*/
+/* line 46, ../sass/_mixins.scss */
+* html .clearfix {
+  height: 1%;
+}
+
+/* line 47, ../sass/_mixins.scss */
+.clearfix {
+  display: block;
+}
+
+/* close commented backslash hack */
+/* line 3, ../sass/_landing.scss */
+#title {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 3em;
+  position: absolute;
+  top: -50px;
+  opacity: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  -moz-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+/* line 15, ../sass/_landing.scss */
+#title.visible {
+  top: 23%;
+  opacity: 1;
+}
+
+/* line 21, ../sass/_landing.scss */
+#welcome {
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-top: 25%;
+}
+/* line 26, ../sass/_landing.scss */
+#welcome h2 {
+  line-height: 1.5em;
+}
+/* line 28, ../sass/_landing.scss */
+#welcome h2[contenteditable="true"] {
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 220px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 15px;
+  line-height: 1em;
+  position: relative;
+  text-indent: 0px;
+  vertical-align: center;
+  outline: none;
+  overflow: hidden;
+  display: inline-block;
+  -webkit-user-select: none;
+  user-select: none;
+  vertical-align: top;
+}
+
+/* line 49, ../sass/_landing.scss */
+#startQuiz {
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 4%;
+}
+
+/* line 7, ../sass/screen.scss */
+body {
+  font-family: 'Helvetica Neue', helvetica, sans-serif;
+  font-weight: 200;
+  background: url("../../images/shapes.jpeg") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+/* line 16, ../sass/screen.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 20, ../sass/screen.scss */
+h1 {
+  font-size: 1.8em;
+}
+
+/* line 24, ../sass/screen.scss */
+h2 {
+  font-size: 1.2em;
+}
+
+/* line 28, ../sass/screen.scss */
+h3 {
+  font-size: 1em;
+}
+
+/* line 32, ../sass/screen.scss */
+h4 {
+  font-size: 0.8em;
+}
+
+/* line 36, ../sass/screen.scss */
+h5 {
+  font-size: 0.7em;
+}

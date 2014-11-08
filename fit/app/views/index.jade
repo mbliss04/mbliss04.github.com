@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+  head
+    title= "Company Fit"
+    link(rel='stylesheet', href='css/stylesheets/screen.css')
+    link(rel='icon', href='../../../images/favicon.ico')
+  body
+    include landing
+    ul#questions
+    script(type='text/javascript', src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js')
+    script(type='text/javascript', src='//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js')
+    script(type='text/javascript', src='//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js')
+    script(type='text/javascript', data-main="js/app", src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.15/require.min.js")
+    script(type='text/javascript')
+      $(window).load(function() { // makes sure the whole site is loaded
+      $('#status').fadeOut(); // will first fade out the loading animation
+      $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+      $('body').delay(350).css({'overflow':'visible'});
+      })
+    include templates

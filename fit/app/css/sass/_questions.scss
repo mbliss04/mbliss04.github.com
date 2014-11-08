@@ -1,0 +1,32 @@
+#questions {
+    li {
+        // display: none;
+        // &.selected {
+        //     display: block;
+        // }
+    }
+    .question-content {
+        margin: 100px;
+        display: block;
+        border-radius: 5px;
+        min-width: 200px;
+        max-width: 500px;
+        h1 {
+            line-height: 1.3em;
+        }
+        .question-list {
+            margin: 20px;
+            text-align: left;
+            .q {
+                margin: 10px;
+                label {
+                    margin-left: 10px;
+                }
+            }
+        }
+        button {
+            width: 100px;
+            margin: 10px;
+        }
+    }
+}
